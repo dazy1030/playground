@@ -36,6 +36,6 @@ jobs:
           fi
 
           echo $PATH
-          ls -la
+          ls -la $HOME
 
           nest
