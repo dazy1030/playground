@@ -1,0 +1,15 @@
+name: 'Action1'
+description: 'action1'
+inputs:
+  hoge:
+    description: hoge
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Hoge
+      run: |
+        echo "${{ inputs.hoge }}"
+      shell: bash
+    - name: action2
+      uses: ./.github/actions/action2
